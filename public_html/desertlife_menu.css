@@ -21,8 +21,16 @@ een horizontaal dropdown menu, enkel met CSS3
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    background: #E570E7;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cb60b3+0,ad1283+50,de47ac+100;Pink+3D */
+    background: #cb60b3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cb60b3 0%, #ad1283 50%, #de47ac 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=0 ); /* IE6-9 */
     
+    box-shadow: 0 0.25em 0.375em rgba(0,0,0, .5);
+    -moz-box-shadow: 0 0.25em 0.375em rgba(0,0,0, .5);
+    -webkit-box-shadow: 0 0.25em 0.375em rgba(0,0,0, .5);
 }
 /* hoofdniveaus */
 .hor_dropdown_menu li {
@@ -33,6 +41,7 @@ een horizontaal dropdown menu, enkel met CSS3
 }
 .hor_dropdown_menu a {
     display: block;
+    color: white;
     text-decoration: none;
     padding: 0.6em 1.25em;
 }
@@ -44,6 +53,10 @@ een horizontaal dropdown menu, enkel met CSS3
     padding: 0;
     width: 12em;
     background: #D566D5;
+    
+    box-shadow: 0 0.25em 0.375em rgba(0,0,0, .5);
+    -moz-box-shadow: 0 0.25em 0.375em rgba(0,0,0, .5);
+    -webkit-box-shadow: 0 0.25em 0.375em rgba(0,0,0, .5);
 }
 .hor_dropdown_menu ul li {
     float: none;
@@ -58,4 +71,15 @@ een horizontaal dropdown menu, enkel met CSS3
 .hor_dropdown_menu li:hover > ul {
     opacity: 1;
     visibility: visible;
+}
+/*geselecteerd menu element en hover effect*/
+
+.hor_dropdown_menu .actief > a, .hor_dropdown_menu li:hover > a {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fcecfc+0,fba6e1+50,fd89d7+51,ff7cd8+100;Pink+Gloss+%232 */
+background: #fcecfc; /* Old browsers */
+background: -moz-linear-gradient(top,  #fcecfc 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #fcecfc 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
+
 }
