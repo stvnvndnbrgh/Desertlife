@@ -1,0 +1,60 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 7, 2016, 11:24:27 AM
+    Author     : steven.vandenberghe
+*/
+
+@charset "UTF-8";
+/* desertlife_menu.css dropdownmenu
+een horizontaal dropdown menu, enkel met CSS3
+*/
+
+/* hoofdmenu styles */
+.hor_dropdown_menu {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1em;   /* 16px */
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    background: #E570E7;
+}
+/* hoofdniveaus */
+.hor_dropdown_menu li {
+    list-style: none;
+    float: left;
+    position: relative;
+    margin: 0;
+}
+.hor_dropdown_menu a {
+    display: block;
+    text-decoration: none;
+    padding: 0.6em 1.25em;
+}
+/* submenus */
+.hor_dropdown_menu ul {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    width: 12em;
+    background: #D566D5;
+}
+.hor_dropdown_menu ul li {
+    float: none;
+    margin: 0;
+}
+/* subsubmenus */
+.hor_dropdown_menu ul ul {
+    top:0.6em;
+    left: 13em;
+}
+/* drop down effect voor alle menus */
+.hor_dropdown_menu li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
