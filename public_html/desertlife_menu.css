@@ -63,7 +63,7 @@ een horizontaal dropdown menu, enkel met CSS3
     -moz-transition: opacity .25s linear, visibility .1s linear .1s;
     -webkit-transition: opacity .25s linear, visibility .1s linear .1s;
     -o-transition: opacity .25s linear, visibility .1s linear .1s;
-    -transition: opacity .25s linear, visibility .1s linear .1s;
+    transition: opacity .25s linear, visibility .1s linear .1s;
 }
 .hor_dropdown_menu ul li {
     float: none;
